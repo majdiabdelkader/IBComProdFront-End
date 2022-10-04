@@ -1,0 +1,113 @@
+<app-header-style-one></app-header-style-one>
+
+
+<div class="page-title-area item-bg1 jarallax" data-jarallax='{"speed": 0.3}'>
+    <div class="container">
+        <div class="page-title-content">
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li>Contact</li>
+            </ul>
+            <h2>Nous Contacter</h2>
+        </div>
+    </div>
+</div>
+
+<section class="contact-info-area pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="contact-info-box mb-30">
+                    <div class="icon">
+                        <i class='bx bx-envelope'></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:contact@ibcomprod.com">contact@ibcomprod.com</a></p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="contact-info-box mb-30">
+                    <div class="icon">
+                        <i class='bx bx-map'></i>
+                    </div>
+                    <h3>Localisation</h3>
+                    <p><a href="https://goo.gl/maps/mpNKu4yYyu5fHTaz7" target="_blank">28, Rue 8600 Z.I. La Charguia I 2035, Site archéologique de Carthage، 1 2035</a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+                <div class="contact-info-box mb-30">
+                    <div class="icon">
+                        <i class='bx bx-phone-call'></i>
+                    </div>
+                    <h3>Téléphone</h3>
+                    <p><a href="tel:+216 95 777 154">+216 95 777 154</a></p>
+                    <p><a href="tel:+216 31 196 056">+216 31 196 056</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="particles-js-circle-bubble-2"></div>
+</section>
+
+<section class="contact-area pb-100">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title"><strong>VOUS SOUHAITEZ NOUS CONTACTER ?</strong></span>
+            <h6>L'équipe IbCom est toujours à votre écoute.</h6>
+
+                Vous pouvez nous contacter directement par email, téléphone ou courrier.
+
+        </div>
+
+        <div class="contact-form">
+            <form id="Contact-form " #f="ngForm" (ngSubmit)="AddContact(f)">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <input type="text" name="nom" id="name" class="form-control" placeholder="Nom" ngModel>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Email" ngModel>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Numéro de téléphone" ngModel>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <input type="text" name="sujet" id="msg_subject" class="form-control" placeholder="Sujet" ngModel>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12">
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" id="message" cols="30" rows="5" placeholder="Message" ngModel></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12">
+                        <button type="submit"   class="default-btn" ><i class='bx bx-paper-plane icon-arrow before'></i><span class="label">OK</span><i class="bx bx-paper-plane icon-arrow after"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="particles-js-circle-bubble-3"></div>
+    <div class="contact-bg-image"><img src="assets/img/map.png" alt="image"></div>
+</section>
+
+<div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.206430339298!2d10.200958614358164!3d36.83753187329892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd4b88474e068d%3A0x2917380f565f81c6!2sIBComProd!5e0!3m2!1sfr!2stn!4v1657899541034!5m2!1sfr!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>

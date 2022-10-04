@@ -1,0 +1,95 @@
+@import "../../common/categories-style-one/categories-style-one.component.scss";
+.post-content {
+    margin-top: 25px;
+
+    .post-meta {
+        padding-left: 0;
+        margin-bottom: 15px;
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            color: var(--paragraphColor);
+            margin-right: 20px;
+            position: relative;
+
+            &.post-author {
+                img {
+                    width: 30px;
+                    height: 30px;
+                    position: relative;
+                    top: -2px;
+                }
+                a {
+                    color: var(--optionalColor);
+                }
+            }
+            a {
+                display: inline-block;
+                color: var(--paragraphColor);
+
+                &:hover, &:focus {
+                    color: var(--mainColor);
+                }
+            }
+            &::before {
+                position: absolute;
+                right: -10px;
+                top: 7px;
+                height: 14px;
+                content: '';
+                width: 1px;
+                background-color: var(--paragraphColor);
+                transform: rotate(15deg);
+            }
+            &:last-child {
+                margin-right: 0;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+    h3 {
+        margin-bottom: 15px;
+        line-height: 1.5;
+        font: {
+            size: 20px;
+            weight: 600;
+        };
+    }
+    .read-more-btn {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        padding-right: 20px;
+        font: {
+            size: var(--fontSize);
+            weight: 400;
+        };
+        i {
+            font-size: 20px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: var(--mainColor);
+            left: 0;
+            bottom: 0;
+            height: 1px;
+            width: 0;
+            z-index: -1;
+            transition: var(--transition);
+        }
+        &:hover, &:focus {
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+}
